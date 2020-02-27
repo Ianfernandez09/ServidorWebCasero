@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title> Restaurante Polagueppe </title>
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+  <body background="Imagenes\fondo.jpg" style="background-repeat: no-repeat;background-size:100%;background-attachment: fixed,scroll;">
+    <table border="0" style="width:100%; height:50%;background-color: white;margin:auto;">
+    <tr>
+  		<td style="text-align: center; width:5%;"><a href="index.html" style="text-decoration: none;"><img src="logo.png" height="100" width="100" alt="logo"></a></td>
+  		<td style="background-color: black;text-align: center; width: 15%; font-family: Georgia;"><a href="index.html" style="text-decoration: none;color:white;">Inicio</a></td>
+  		<td style="background-color: black;text-align: center; width: 15%; font-family: Georgia;"><a href="localizacion.html" style="text-decoration: none;color:white;">Localizacion</a></td>
+  		<td style="background-color: black;text-align: center; width: 15%; font-family: Georgia;"><a href="quienes_somos.html" style="text-decoration: none;color:white;">Quiénes somos</a></td>
+  		<td style="background-color: black;text-align: center; width: 15%; font-family: Georgia;"><a href="carta.html" style="text-decoration: none;color: white;">Carta</a></td>
+  		<td style="background-color: black;text-align: center; width: 15%; font-family: Georgia;"><a href="contacto.html" style="text-decoration: none;color: white;">Contacto</a></td>
+  	</tr>
+    </table>
+    <center>
+    <div style=" width: 760px; padding: 3px;">
+      <div id="contenedor" style="color: white; width: 245px; float: left; margin-right: 20px;">
+        <h2 id="encabezado"> ¡Hazte Socio!</h2>
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+          Nombre:<br>
+          <input type"text" name="nombre" id="nombre"><br>
+          Apellidos:<br>
+          <input type="text" name="apellidos" id="apellidos"><br>
+          Sexo:<br>
+          <input type="radio" name="sexoh" id="sexoh" > Hombre
+          <input type="radio" name="sexom" id="sexom" > Mujer <br>
+          DNI:<br>
+          <input type="text" name="DNI" id="DNI" maxlength="9"><br>
+          Fecha Nacimiento:<br>
+          <input type="text" name="FNacimiento" id="FNacimiento" maxlength="11"><br>
+          Dirección:<br>
+          <input type="text" name="Direccion" id="Direccion"><br>
+          IBAN:<br>
+          <input type="text" name="IBAN" id="IBAN" maxlength="24"><br>
+          CCV:<br>
+          <input type="password" name="ccv" id="ccv" maxlength="3"><br><br>
+          <input type="submit" name="enviar" value="Enviar Datos">
+        </form>
+        </div>
+        <div id="contenedor2" style="color: white; float: right; width: 245px;">
+          <h2 id="encabezado2"> Cuéntanos tu recomendación</h2>
+          <form id="formulario2" name="formulario2" method="post" action="data2.php">
+            Email:<br>
+            <input type="text" name="email" id="email"><br>
+            Cuéntanos:<br>
+            <textarea rows="14" cols="50">Escribe aquí...</textarea>
+          </form>
+        </div>
+        <div id="contenedor3" style="color: white; float: right; width: 245px;">
+          <h2 id="encabezado3"> Trabaja con nosotros </h2>
+          <form id="formulario3" name="formulario3" method="post" action="data3.php">
+            Nombre:<br>
+            <input type="text" name="nombre" id="nombre"><br>
+            Apellidos:<br>
+            <input type="text" name="apellidos" id="apellidos"><br>
+            Email:<br>
+            <input type="text" name="email" id="email"><br>
+            Manda aquí tu currículum:<br>
+            <input type="file" name="cv" id="cv"><br>
+          </form>
+         </div>
+      </div>
+    </center>
+  </body>
+</html>
